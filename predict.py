@@ -17,25 +17,6 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 image_h = 256
 image_w = 256
 
-def authentication():
-    # Authenticate and create PyDrive client
-    gauth = GoogleAuth()
-    gauth.LoadCredentialsFile("backgroundremoval-424110-50a633002afe.json")  # Load credentials
-
-    if gauth.credentials is None:
-        gauth.LocalWebserverAuth()  # Authenticate if credentials file is missing
-    elif gauth.access_token_expired:
-        gauth.Refresh()  # Refresh token if expired
-    else:
-        gauth.Authorize()  # Authorize if credentials are valid
-
-
-    drive = GoogleDrive(gauth)
-    # ID of your TensorFlow model file on Google Drive
-    file_id = '1Wv8KsXQlk1pRgu-r9OYGWeEbtWdaaAeA'
-
-    file = drive.CreateFile({'id': file_id})
-    file.GetContentFile('model.h5') 
 
 
 def prediction(img):
@@ -55,7 +36,6 @@ def prediction(img):
     # Directory for storing the mask
 
     # Loading the model
-    authentication()
     model = tf.keras.models.load_model("model.h5")
 
     h, w, _ = img.shape
