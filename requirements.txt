@@ -1,0 +1,12 @@
+streamlit
+tensorflow==2.10.1
+keras==2.10.0
+numpy
+pandas
+opencv-python-headless
+tqdm
+pillow
+scikit-learn
+
+
+
