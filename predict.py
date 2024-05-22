@@ -32,7 +32,7 @@ def prediction(img):
     # Directory for storing the mask
 
     # Loading the model
-    model = tf.keras.models.load_model("model.h5")
+    model = tf.keras.models.load_model("/workspaces/Background_Removal/model.h5")
 
     h, w, _ = img.shape
     x = cv2.resize(img, (image_w, image_h))
