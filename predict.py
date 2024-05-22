@@ -7,10 +7,6 @@ from tqdm import tqdm
 import tensorflow as tf
 from train import create_dir
 
-
-from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
-
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
 # Global Parameters 
