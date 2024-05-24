@@ -80,3 +80,7 @@ if uploaded_file is not None and result == True:
     img = st.image(image, use_column_width = True, clamp = True)
     
     print("Background removed successfully!")
+
+if result == True:
+    if uploaded_file is None:
+        st.error("Please upload a file in .jpg, .jpeg or .png format!")
