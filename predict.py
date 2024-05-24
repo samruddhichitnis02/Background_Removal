@@ -6,12 +6,27 @@ from glob import glob
 from tqdm import tqdm
 import tensorflow as tf
 from train import create_dir
+import gdown
+import streamlit as st
+
+
+# URL of the model stored in Google Drive
+file_id = '1Wv8KsXQlk1pRgu-r9OYGWeEbtWdaaAeA'
+url = f'https://drive.google.com/uc?id={file_id}'
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
 # Global Parameters 
 image_h = 256
 image_w = 256
+
+
+@st.cache_resource
+def load_model_from_drive(url):
+    output = 'model.h5'
+    gdown.download(url, output, quiet = False)
+    model = tf.keras.models.load_model(output)
+    return model
 
 
 
@@ -32,7 +47,8 @@ def prediction(img):
     # Directory for storing the mask
 
     # Loading the model
-    model = tf.keras.models.load_model("/workspaces/Background_Removal/model.h5")
+    model = load_model_from_drive(url)
+    # model = tf.keras.models.load_model("/workspaces/Background_Removal/model.h5")
 
     h, w, _ = img.shape
     x = cv2.resize(img, (image_w, image_h))

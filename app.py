@@ -79,3 +79,4 @@ if uploaded_file is not None and result == True:
     image = Image.open(save)
     img = st.image(image, use_column_width = True, clamp = True)
     
+    print("Background removed successfully!")
