@@ -55,6 +55,6 @@
 <!-- <img src="U-net.jpg" alt="Description of Image" style="width:300px; height:200px;"> -->
 
 <p align="center">
-  <img src="U-net.jpg" width="350" title="hover text">
-  <img src="U-net.jpg" width="350" alt="accessibility text">
+  <img src="U-net.jpg" width="350px" height="350px" title="hover text">
+  <!-- <img src="U-net.jpg" width="350" alt="accessibility text"> -->
 </p>
