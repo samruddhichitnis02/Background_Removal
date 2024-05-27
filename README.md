@@ -14,6 +14,6 @@
 
 * Installation :
     To get started, clone this repository and install the required dependencies:
-        - git clone https://github.com/yourusername/background-removal.git
-        - cd background-removal
-        - pip install -r requirements.txt
+    - git clone https://github.com/yourusername/background-removal.git
+    - cd background-removal
+    - pip install -r requirements.txt
