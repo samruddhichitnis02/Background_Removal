@@ -58,6 +58,6 @@
 <p align="center">
   <img src="U-net.jpg" width="500px" height="500px" title="hover text" >
   <!-- <img src="U-net.jpg" width="350" alt="accessibility text"> -->
-</p>
 <figcaption style ="text-align:center">Unet Architecture src - https://www.geeksforgeeks.org/u-net-architecture-explained/</figcaption> 
+</p>
 </figure> 
