@@ -54,7 +54,10 @@
 
 <!-- <img src="U-net.jpg" alt="Description of Image" style="width:300px; height:200px;"> -->
 
+<figure> 
 <p align="center">
-  <img src="U-net.jpg" width="350px" height="350px" title="hover text">
+  <img src="U-net.jpg" width="500px" height="500px" title="hover text" >
   <!-- <img src="U-net.jpg" width="350" alt="accessibility text"> -->
 </p>
+<figcaption>Unet Architecture src - https://www.geeksforgeeks.org/u-net-architecture-explained/</figcaption> 
+</figure> 
