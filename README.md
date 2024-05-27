@@ -36,12 +36,12 @@
 * Model Architecture :
     - The model is based on the U-Net architecture, which is widely used for image sengmentation tasks.
 
-### What is Image Segmentation?
++ What is Image Segmentation?
     - Image Segmentation is a fundamental task in computer vision that involves partitioning an image into distinct regions or segments to simplify its analysis and interpretation.
     - Each segment typically corresponds to different objetcs or parts of the image.
     - This technique is essential for various applications such as medical imaging, autonomous driving, and object detection, enabling more precise and meaningful analysis by isolating relevant areas within the image.
 
-### What is U-Net Architecture?
++ What is U-Net Architecture?
     - The U-Net architecture is a type of convolutional neural network (CNN) specifically designed for image segmentation tasks.
     - The primary purpose of this architecture was to address the challenge of limited annotated data in the medical field.
     - This network was designed to effectively leverage a smaller amount of data while maintaining speed and accuracy.
