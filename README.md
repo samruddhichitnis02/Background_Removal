@@ -56,7 +56,7 @@
 
 <figure> 
 <p align="center">
-  <img src="U-net.jpg" width="750px" height="750px" title="hover text" >
+  <img src="U-net.jpg" width="750px" height="850px" title="hover text" >
   <!-- <img src="U-net.jpg" width="350" alt="accessibility text"> -->
 </p>
 <div align="center">
