@@ -26,3 +26,6 @@
     - The dataset should include pairs of original images and their corresponding masks(ground truth).
     - The images and masks should be properly aligned and named consistently.
     - For training the current model I have used the data from the following [Person Segmentation Dataset](https://www.kaggle.com/datasets/nikhilroxtomar/person-segmentation?resource=download).
+    - The Person Segmentation Dataset consists of 5768 images and 5768 corresponding masks.
+    - While training the model from scratch, all the images were placed in one folder and all the corresponding masks were placed in the other folder, the file structure looks like the below structure:
+        ![alt text](image.png) 
