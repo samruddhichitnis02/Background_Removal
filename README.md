@@ -52,4 +52,9 @@
     - On the other hand, the expansive path works on decoding the encoded data and locating the features while maintaining the spatial resolution of the input.The decoder layers in the expansive path upsample the feature maps, while also performing convolutional operations.
     - The skip connections from the contracting path help to preserve the spatial information lost in the contracting path, which helps the decoder layers to locate the features more accurately.
 
-    <img src="U-net.jpg" alt="Description of Image" style="width:300px; height:200px;">
+<!-- <img src="U-net.jpg" alt="Description of Image" style="width:300px; height:200px;"> -->
+
+<p align="center">
+  <img src="U-net.jpg" width="350" title="hover text">
+  <img src="U-net.jpg" width="350" alt="accessibility text">
+</p>
